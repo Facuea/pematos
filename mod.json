@@ -1,0 +1,18 @@
+{
+	"geode": "4.0.0",
+	"gd": { "win": "2.2074" },
+	"id": "facundo.tick-assist",
+	"name": "Tick Assist",
+	"version": "v0.1.0",
+	"developer": "Facundo",
+	"description": "Input buffer de N ticks para practicar. Marca de agua fija en pantalla.",
+	"settings": {
+		"ticks": {
+			"type": "int",
+			"name": "Ticks de gracia",
+			"default": 1,
+			"min": 0,
+			"max": 8
+		}
+	}
+}
