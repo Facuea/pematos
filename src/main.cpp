@@ -25,7 +25,7 @@ public:
 	}
 	void update(float) override {
 		int t = Mod::get()->getSettingValue<int64_t>("ticks");
-		m_label->setString(fmt::format("TICK ASSIST ACTIVO ({} ticks) - NO VALIDO PARA RECORDS", t).c_str());
+		m_label->setString(("TICK ASSIST ACTIVO (" + std::to_string(t) + " ticks) - NO VALIDO PARA RECORDS").c_str());
 		m_label->setPosition({4.f, CCDirector::get()->getWinSize().height / 2});
 		m_label->setVisible(true);
 		m_label->setOpacity(255);
